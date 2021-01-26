@@ -120,8 +120,8 @@ agent:
                   - $ref: /dbConnection
               defaultProvider: did:ethr:rinkeby
               providers:
-                did:my:
-                  $require: ./build#IdentifierProvider
+                did:key:
+                  $require: ./build#KeyDidProvider
                   $args:
                     - defaultKms: local
                 did:ethr:
